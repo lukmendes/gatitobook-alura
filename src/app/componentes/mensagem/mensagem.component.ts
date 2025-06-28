@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-mensagem',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./mensagem.component.css']
 })
 export class MensagemComponent {
+  @Input()
+  mensagem = ''
 
+  constructor() {}
+
+  ngOnInit(): void {}
 }
